@@ -14,10 +14,8 @@ interface Props extends React.HTMLProps<HTMLButtonElement> {
 function Button(props: Props) {
   const {label, className, style, onClick, to} = props;
   return to ? (
-    <Link href={to} passHref>
-      <a className={className} style={style}>
-        {label}
-      </a>
+    <Link href={to} className={className} style={style}>
+      {label}
     </Link>
   ) : (
     <button className={className} style={style} onClick={onClick}>

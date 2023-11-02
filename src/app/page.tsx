@@ -6,7 +6,7 @@ export default function Home() {
     <main>
       <div>
         <Input />
-        <Button label={'Post'} />
+        <Button label={'Post'} to="asd" />
       </div>
     </main>
   );
